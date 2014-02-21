@@ -36,24 +36,24 @@ Please note:
 ## [FZFalzar's BetterWhisper plugin](https://github.com/FZFalzar/StarryPy_plugins/tree/brutus_whisper/plugins/brutus_whisper)
 > Brings better functionality for the sending of Private Messages in Starbound
 > Adds the following commands and abilities to the server:
-> ```
+>```
 @permissions(UserLevels.GUEST)
 /w <name> <message> 			#Sends a PM to target. Overrides default /w functionality. alias is /whisper
 /r <message>      				#Replies to the last person who you received a PM from
 
 @permissions(UserLevels.ADMIN)
 /socialspy <on|true|off|false>	#Enables/Disables SocialSpy, a feature for admins to receive PMs sent by anyone, for policing purposes
-> ```
+>```
 
 ## [FZFalzar's ServerAds plugin](https://github.com/FZFalzar/StarryPy_plugins/tree/serverads_plugin/plugins/serverads_plugin)
 > Broadcasts defined messages(ServerAds) at a preset duration
 > Additional messages can be specified in config.json under "serverads_list". The plugin prefix can also be modified to your liking, under "serverads_prefix"
 > Adds the following commands and abilities to the server:
-> ```
+>```
 @permissions(UserLevels.ADMIN)
 /ads_reload 					#Reloads the configuration. Currently does not work as there is no way to reload config.json
 /ads_interval [num]				#Displays the current interval for message broadcast. If num (in seconds) is specified, the new interval for message broadcast will be set.
-> ```
+>```
 ### Add the following block to your config file:
 
 >```
