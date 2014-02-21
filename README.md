@@ -45,6 +45,31 @@ Please note:
 /socialspy <on|true|off|false>	#Enables/Disables SocialSpy, a feature for admins to receive PMs sent by anyone, for policing purposes
 > ```
 
+## [FZFalzar's ServerAds plugin](https://github.com/FZFalzar/StarryPy_plugins/tree/serverads_plugin/plugins/serverads_plugin)
+> Broadcasts defined messages(ServerAds) at a preset duration
+> Additional messages can be specified in config.json under "serverads_list". The plugin prefix can also be modified to your liking, under "serverads_prefix"
+> Adds the following commands and abilities to the server:
+> ```
+@permissions(UserLevels.ADMIN)
+/ads_reload 					#Reloads the configuration. Currently does not work as there is no way to reload config.json
+/ads_interval [num]				#Displays the current interval for message broadcast. If num (in seconds) is specified, the new interval for message broadcast will be set.
+> ```
+### Add the following block to your config file:
+
+>```
+"serverads_plugin": {
+    "auto_activate": true,
+    "serverads_interval": 30,
+    "serverads_list": [
+        "Welcome to the server!",
+        "Have a nice stay!",
+        "Have fun, don't grief!",
+        "Check out our site at somewebpage.com!"
+        ],
+    "serverads_prefix": "^#FF6600;[SA]"
+	}
+>```
+
 ## [Maffi's uptime plugin](https://github.com/MrMarvin/StarryPy_plugins/blob/master/plugins/uptime)
 > Very simple plugin that responds to /uptime with the time StarryPy is running.
 
