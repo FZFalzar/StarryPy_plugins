@@ -76,7 +76,7 @@ class ServerAds(SimpleCommandPlugin):
         self.load_config()
         self.start_broadcasting()
         self.protocol.send_chat_message("ServerAds reloaded!")
-        self.protocol.send_chat_message("A restart is necessary as there is currently no other way to reload config.json. Sorry for the inconvenience!"
+        self.protocol.send_chat_message("A restart is necessary as there is currently no other way to reload config.json. Sorry for the inconvenience!")
 
     @permissions(UserLevels.ADMIN)
     def ads_interval(self, data):
